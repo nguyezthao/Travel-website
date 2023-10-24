@@ -1,0 +1,185 @@
+.main {
+  margin-top: 100px;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.main video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -10;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  padding: 0;
+  margin: 0;
+}
+.header .container .menu .item .child-menu .child-menu-item:hover {
+  background-color: rgb(94, 156, 156);
+}
+
+.content {
+  font-size: 22px;
+  justify-content: center;
+  display: flex;
+}
+.main .box {
+  position: absolute;
+  top: 110px;
+  right: 10px;
+  bottom: 1px;
+  float: left;
+}
+
+.main .box > div {
+  background-color: rgba(220, 251, 251, 0.5);
+  padding: 10px;
+  font-size: 30px;
+  height: 120px;
+  width: 300px;
+  margin-top: 5px;
+  transition: width 0.6s, height 1s;
+  border-radius: 10px;
+  display: flex;
+}
+.content .text {
+  position: absolute;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  left: 100px;
+}
+.content .box img {
+  width: 300px;
+  border-radius: 5px;
+  object-fit: cover;
+}
+
+.main .box > div:hover {
+  height: 180px;
+  display: flex;
+  width: 350px;
+}
+.main .box .chilcontent {
+  display: none;
+}
+.main .box > div:hover > .chilcontent {
+  display: flex;
+  font-size: 18px;
+  height: 220px;
+  width: 400px;
+}
+.main .box > div:hover > img {
+  display: none;
+}
+.main .logo {
+  position: absolute;
+  bottom: 0px;
+  left: 500px;
+}
+.review {
+  background-image: url(./image/07.jpg);
+  width: 100%;
+  height: 500px;
+  background-size: cover;
+  background-position-y: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-position-x: -90%;
+}
+.review .child-review {
+  width: 80%;
+
+  height: 400px;
+
+  background-size: cover;
+  background-color: rgba(13, 172, 230, 0.6);
+  display: flex;
+}
+.review .child-review .feedback {
+  flex: 50%;
+  background-image: url(./image/remove.png);
+  background-size: cover;
+  background-position-y: 10%;
+}
+.review .child-review .form_feedback {
+  flex: 50%;
+  color: white;
+  display: flex;
+  justify-content: center;
+}
+.review .child-review .form_feedback input {
+  background: transparent;
+  border: 0;
+  outline: 0;
+  width: 100px;
+}
+.review .child-review .form_feedback .form_group {
+  border-bottom: 1px white solid;
+  width: 300px;
+}
+
+.review .child-review .feedback .text-feedback {
+  width: 100px;
+  height: 400px;
+  margin-top: -21px;
+  background-color: rgba(252, 240, 240, 0.3);
+  position: relative;
+  animation: move 10s linear infinite;
+}
+
+.review .child-review .feedback .text-feedback .text1 li {
+  font-size: 40px;
+  text-align: center;
+  text-shadow: 2px 2px red;
+  padding: 10px;
+  color: rgb(36, 35, 33);
+}
+
+button:hover {
+  background-color: rgb(79, 186, 212);
+}
+
+.container-footer {
+  color: white;
+  width: 100%;
+  height: auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  padding-top: 10px;
+  background-color: rgb(79, 186, 212);
+  column-gap: 70px;
+  opacity: 0.95;
+}
+.container-footer .child-footer {
+  padding: 10px 50px;
+  border: 1px soid;
+  position: relative;
+  grid-row: 20px;
+  height: 200px;
+  padding-top: 10px;
+}
+
+.icon .item-icon {
+  width: 40px;
+  height: 40px;
+  background-color: rgb(251, 252, 255);
+  border-radius: 70%;
+  padding: 0px;
+}
+.icon .item-icon:hover {
+  background-color: rgb(255, 251, 251);
+  width: 60px;
+  height: 60px;
+  border-radius: 70%;
+  border-color: chocolate;
+}
+.container-footer .child-footer .img {
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  top: -28px;
+}

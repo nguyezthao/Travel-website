@@ -1,0 +1,56 @@
+/* liên hệ*/
+.container_lh {
+    margin-top: 100px;
+    display: flex;
+    margin-left: 100px;
+    margin-right: 100px;
+    font-size: 20px;
+  }
+  
+  input {
+    width: 450px;
+    padding-top: 10px;
+    margin-top: 10px;
+  }
+  
+  iframe {
+    margin-top: 220px;
+  }
+  
+  .content_lh p {
+    width: 80%;
+  }
+  
+  h1 {
+    text-align: center;
+  }
+  
+  .form-group {
+    margin-bottom: 15px;
+  }
+  
+  /* label {
+      font-weight: bold;
+  } */
+  
+  input[type="text"],
+  input[type="email"],
+  textarea {
+    width: 90%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  

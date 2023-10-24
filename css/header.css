@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    
+}
+
+body ul {
+     
+    list-style: none !important;
+}
+
+body {
+    overflow-x: hidden;
+    box-sizing: border-box;
+   
+   
+}
+.header  {
+    width: 100%;
+    background-color: #FFFFFF;
+    height: 80px;
+    box-shadow: 0px 2px 2px rgba(0,0,0,0.5); /*Đổ bóng cho menu*/
+    position: fixed; /*Cho menu cố định 1 vị trí với top và left*/
+    top: 0; 
+    left: 0; 
+    z-index: 1;
+   
+}
+
+.header .headerall {
+   display: flex;
+   flex: 1;
+   align-items: center;
+   height: 100%;
+   padding: 0 20px;
+}
+
+.header .headerall .logo {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    color: rgb(10, 15, 15);
+    margin-left:50px;
+    margin-top: 10px;
+    font-size: 20px;
+
+    
+}
+
+.header .headerall .logo img {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.header .headerall .menu {
+   
+    flex: 1;
+    display: flex;
+    align-items: center; 
+    justify-content: flex-end;
+}
+.header .headerall .menu .item a{
+    text-decoration: none;
+    color: rgb(27, 117, 196);
+}
+.header .headerall .menu .item {
+    text-decoration: none;
+    cursor: pointer;
+    position: relative;
+    left: -60px;
+    color: rgb(27, 117, 196);
+    
+  
+}
+
+.header .headerall .menu .item:hover .child-menu {
+    opacity: 3;
+    visibility: visible;
+    transition: all 0.25s linear;
+}
+
+.header .headerall .menu .item {
+    margin-right: 100px;
+}
+
+.header .headerall .menu .item .child-menu {
+   
+    position: absolute;
+    top: 100%;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    background-color: #6FA6C5;
+    min-width: 180px;
+    border-radius: 8px;
+    padding: 0px;
+    box-shadow: 0px 10px 15px -3px rgba(0,0,0,0.1);
+    opacity: 0;
+    visibility: hidden;
+    color: black;
+   
+}
+
+.header .headerall .menu .item .child-menu .child-menu-item {
+    padding: 4px 16px;
+}
+
+.header .headerall .menu .item .child-menu .child-menu-item:not(:first-child) {
+    margin-top: 4px;
+    border-top: 1px solid #f7fafc;
+}
+.container-footer{
+    color: white;
+    width: 100%;
+    height: auto;
+    display: grid;
+    grid-template-columns:  repeat(3, 1fr); 
+    padding-top:10px;
+    background-color:rgb(79, 186, 212);
+    column-gap: 70px;
+    opacity: 0.95;
+   
+    
+   }
+    .container-footer .child-footer{
+    padding: 10px 50px;
+    border: 1px soid;
+  position: relative;
+    grid-row: 20px;
+    height: 200px;
+    padding-top: 10px;
+   }
+  
+    .icon .item-icon{
+     width: 40px; height: 40px; 
+    background-color: rgb(251, 252, 255);
+    border-radius: 70%;
+    padding: 0px;
+    }
+    .icon .item-icon:hover{
+        background-color: rgb(255, 251, 251);
+        width: 60px;
+        height: 60px;
+        border-radius: 70%;
+        border-color: chocolate;
+    
+    }
+    .container-footer .child-footer .img{
+        width: 100px;
+        height: 100px;
+        position: absolute;
+        top: -28px;
+        
+        
+    }
+    
+    
+   
+
+ 
+
+ 
+
+  
